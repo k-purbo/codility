@@ -34,7 +34,7 @@ def solution(A):
 
     # if one unmatched item
     if len(unmatched) == 1:
-        return unmatched.keys()[0]
+        return list(unmatched.keys())[0]
     else:
         raise Exception("Expected one unmatched item, but have this: %s" % unmatched)
 
